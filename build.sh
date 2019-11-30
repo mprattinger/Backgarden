@@ -1,4 +1,4 @@
 #!/bin/bash
 cd src
-dotnet build --configuration Release -o ../dist
+dotnet build --configuration Release
 cd ..
