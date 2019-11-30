@@ -21,6 +21,11 @@ pipeline {
                 sh 'sh test.sh'
             }
         }
+        stage('publish') {
+            steps {
+                sh 'sh publish.sh'
+            }
+        }
         stage('deploy') {
             steps {
                 sh 'sh deploy.sh'
